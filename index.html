@@ -1,21 +1,331 @@
+
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-<title>RGGTRN</title>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>RGGTRN</title>
+	<meta name="description" content="Recurso del colectivo itinerante de música electrónica para bailar RGGTRN.">
+	<meta name="author" content="RGGTRN">
+	
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS Files
+	* cssreset-min.css 			- CSS reset
+	* typegrid.css				- Responsive grid system
+	* style.css					- Main CSS file
+	
+	Original LESS Stylesheet
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	================================================== -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
+	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+		
+	<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
 </head>
+
 <body>
 
-<body style="background-color:black;">
 
-<div align="center">
+	<!-- Header - Half Logo
+	================================================== -->
+	<section id="header">
 
-<img src="images/loweb2.png" alt="RGGTRN" style="width:577px;height:326px;">
+		<!-- * * * * * * * * * * * * * * * * * * * * * * *
 
-</br>
+			Top Bar & Menu (#nav)
 
-<iframe width="25%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/157362680&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+		* * * * * * * * * * * * * * * * * * * * * * * * -->
+		<div class="topbar">
+			<div class="container">
+					
+				<!--
+					A custom jQuery plugin called typeMenu handles the menu
+					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
+				-->
+				<ul id="nav" class="full">
+					<li>
+						<a href="about.html">
+							<span class="count hide-on-mobile"></span>
+							Quiénes somos
+						</a>
+				
+						<!--<ul>
+							<li><a href="index-with-iosslider.html">Home w/ Slider</a></li>
+							<li><a href="index-with-flexslider.html">Home w/ Slider 2</a></li>
+							<li><a href="contact.html">Contacto</a></li>
+						</ul>-->
+					</li>
+					<li>
+						<a href="works-stackgrid-with-title.html">
+							<span class="count hide-on-mobile"></span>
+							Proyectos + Amistades
+						</a>
+						<!--<ul>
+							<li><a href="works-stackgrid-images.html">Images Only</a></li>
+							<li><a href="works-architecture-three-columns.html">Architecture</a></li>
+							<li class="hide-on-mobile"><a href="works-architecture-two-columns.html">Two Columns</a></li>
+							<li>
+								<a href="single-photography-sidebar-right.html">Single</a>
+								<ul>
+									<li><a href="single-photography-full-width.html">Full Width</a></li>
+									<li><a href="single-photography-sidebar-left.html">Left Sidebar</a></li>
+								</ul>
 
-</div>
+							</li>
+						</ul>-->
+					</li>
 
+					<li>
+						<a href="single-blog.html">
+							<span class="count hide-on-mobile"></span>Blog
+						</a>
+						<!--<ul>
+							<li><a href="shop-item.html">Single Item</a></li>
+						</ul>
+					</li>--> 
+
+					<li>
+						<a href="contact.html">
+							<span class="count hide-on-mobile"></span>
+							Contacto
+						</a>
+						<!--<ul>
+							<li><a href="single-blog.html">Single Page</a></li>
+						</ul>-->
+					</li>
+					
+				</ul><!-- // #nav -->
+
+			</div><!-- // .container -->
+		</div><!-- // .topbar -->
+
+		<div class="logo-wrap">
+			<div class="container">
+				<div class="desktop-6 columns">
+					<h1><a href="index.html" title="Home"><img src="images/logo_text_half.png" alt="" align="right" /></a></h1>
+				</div><!-- // .desktop-6 -->
+
+				<div class="desktop-6 columns">
+                                        
+                          	<iframe width="75%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/157362680&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+                                </div><!-- // .desktop-6 -->
+
+
+				<!--<div class="desktop-6 columns">
+					<p class="site-desc">
+						RGGTRN<br />
+						<span class="font-color-primary">Colectivo itinerante de música algorítmica para bailar</span>
+					</p><!-- // .site-desc
+				</div> --> <!-- // .desktop-6 --> 
+
+				<div class="clear"></div>
+			</div><!-- // .container -->
+		</div><!-- // .logo-wrap -->
+	</section><!-- // #header -->
+
+
+	<!-- Works
+	================================================== -->
+	<section id="works">
+		<div class="container">
+			<div class="desktop-12 columns"><div class="border-top"></div></div>
+
+			
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Casa Rodante | Manizales, Colombia</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/manzales.png" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Platohedro | Medellín, Colombia</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/medellin_1.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+ 				
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Platoon  | Ciudad de México, México</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/algorave_04.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Numantina  | Ciudad de México, México</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/numantina.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Ravenbourne | Londres, Reino Unido</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/london2.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>ODI Leeds | Leeds, Reino Unido</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/leeds.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Rancho Electrónico | CDMX, México</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/rancho.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>SAE Institute | CDMX, México</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/sae.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<!--<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Databit | Arles, Francia</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/databit.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<!--<a href="" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>/* vivo */ | Ciudad de México, México</h3>
+							<span class="category">Presentación</span>
+
+							<img src="images/luisemilio.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<!--<div class="clear"></div>
+			
+				
+				
+				<div class="clear"></div>
+			
+		</div><!-- // .container -->
+	</section><!-- // section#works -->
+
+
+
+
+	<!-- Footer
+	================================================== -->
+	<section id="footer">
+		<div class="container">
+			<!--<div class="desktop-3 columns">
+				<p>       <a href="http://www.typebig.com" class="italic">      </a></p>
+			</div><!-- // .desktop-3 -->
+
+			<div class="desktop-9 columns">
+				<ul id="social">
+					<li><a href="http://www.facebook.com/rggtrn" class="hoverMe">Facebook</a></li>
+					<li><a href="http://www.twitter.com/rggtrn" class="hoverMe">Twitter</a></li>
+					<li><a href="https://vimeo.com/rggtrn" class="hoverMe">Vimeo</a></li>
+				</ul><!-- // #social -->
+			</div><!-- // .desktop-9 -->
+
+			<div class="clear"></div>
+		</div><!-- // .container -->
+	</section><!-- // section#footer -->
+
+
+	<!-- JS
+	================================================== -->
+	<!-- 
+		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
+		Use jQuery 1.8 until Flexslider 2.2 stable version is released
+	-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="js/jQuery.BlackAndWhite.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/less-1.4.0.min.js"></script>
+	<script src="js/jquery.typeMenu.js"></script>
+	<script src="js/jquery.typeSticky.js"></script>
+
+
+	
+
+	
+
+
+	
+
+
+	<script src="js/jquery.custom.js"></script>
+
+
+<!-- End Document
+================================================== -->
 </body>
 </html>
