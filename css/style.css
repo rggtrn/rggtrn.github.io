@@ -268,7 +268,7 @@ b, strong { font-weight: bold; }
 	select {
 		width: 100%;
 		padding: 20px 25px;
-		color: #111;
+		color: #000;
 		margin: 0 0 15px 0;
 		border: 1px solid #ddd;
 		outline: none;
