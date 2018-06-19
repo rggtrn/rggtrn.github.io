@@ -1,340 +1,103 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
 <head>
-
-	<!-- Basic Page Needs
-	================================================== -->
-	<meta charset="utf-8">
-	<title>RGGTRN</title>
-	<meta name="description" content="Saborítmico">
-	<meta name="author" content="RGGTRN">
-	
-	<!-- Mobile Specific Metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- CSS Files
-	* cssreset-min.css 			- CSS reset
-	* typegrid.css				- Responsive grid system
-	* style.css					- Main CSS file
-	
-	Original LESS Stylesheet
-	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
-	================================================== -->
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
-	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-		
-	<!--[if lt IE 8]>
-		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta charset="utf-8">
+  <title>RGGTRN</title>
+  <meta name="description" content="Saborítmico">
+  <meta name="author" content="RGGTRN">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
 </head>
 
-<body>
+
+<html>
+  <body>
+
+<header>
+  <div class="intro">
+    <h1><a href="index.html" title="Home"><img src="img/rggtrnRed.png" alt="" align="center" /></a></h1>
+  </div>
+</header>
+
+<!-- ABOUT -->
+
+<div class="wrapper">
+	<section class="about">
+		<div class="about-content">
+			<h3>Nosotrxs</h3>
+			<p>RGGTRN es un colectivo de música por computadora que busca la interacción temporalmente asociada con artistas músicos y programadores, así como la implementación y el uso de sistemas mixtos, personalizados de audio y video para presentaciones en vivo. <br> RGGTRN (pronunciado reggaetrón) fue fundado en 2012 y debutó como el duo ~ON en el primer Simposio Internacional de Música y Código /*vivo*/ en la Ciudad de México. Actualmente el colectivo está conformado por Luis Navarro, Emilio Ocelotl, Jessica Rodríguez y Marianne Teixido.<br>RGGTRN persigue la improvisación sonora/visual usando como referente la estética de música latinoamericana que muta dentro del contexto de la música electrónica bailable, de la síntesis de audio y de la composición algorítmica.<br> Recientemente, RGGTRN ha incorporado la impartición de talleres a su actividad. Estos están relacionados con la práctica artística, la reflexión sobre el entorno visual y sonoro y la personalización de herramientas para la ejecución en escena.<br> Como un ejercicio de reflexión, RGGTRN expone su experiencia y sus estrategias por medio de textos colaborativos.</p>
+			<a href="https://drive.google.com/open?id=1PnWHQjkKiGPdVXr2Vdi2y6PyLX3QiufY">Kit de prensa</a></p>
 
 
-	<!-- Header - Half Logo
-	================================================== -->
-	<section id="header">
-
-		<!-- * * * * * * * * * * * * * * * * * * * * * * *
-
-			Top Bar & Menu (#nav)
-
-		* * * * * * * * * * * * * * * * * * * * * * * * -->
-		<div class="topbar">
-			<div class="container">
-					
-				<!--
-					A custom jQuery plugin called typeMenu handles the menu
-					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
-				-->
-
-                                <ul id="nav" class="full">
-                                        <li>
-                                                <a href="index.html">
-                                                        <span class="count hide-on-mobile"></span>
-                                                        Inicio
-                                                </a>
-
-                                                
-                                                           
-                                        </li>
-
-					<li>
-						<a href="">
-							<span class="count hide-on-mobile"></span>
-							Quiénes somos
-						</a>
-				
-						<ul>
-							 <!--<li><a href="index-with-iosslider.html">Perfiles</a></li> -->
-							<li><a href="nosotros.html">Nosotrxs</a></li>
-							<!-- <li><a href="perfiles.html">Perfiles</a></li> -->
-							<li><a href="contacto.html">Contacto</a></li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="media.html">
-							<span class="count hide-on-mobile"></span>
-							Media
-						</a>
-						<!--<ul>
-							<li><a href="works-stackgrid-images.html">Images Only</a></li>
-							<li><a href="works-architecture-three-columns.html">Architecture</a></li>
-							<li class="hide-on-mobile"><a href="works-architecture-two-columns.html">Two Columns</a></li>
-							<li>
-								<a href="single-photography-sidebar-right.html">Single</a>
-								<ul>
-									<li><a href="single-photography-full-width.html">Full Width</a></li>
-									<li><a href="single-photography-sidebar-left.html">Left Sidebar</a></li>
-								</ul>
-
-							</li>
-						</ul>-->
-                                                <!--<ul>
-                                                         <!--<li><a href="index-with-iosslider.html">Perfiles</a></li> 
-                                                        <li><a href="audio.html">Audio</a></li>
-                                                        <li><a href="video.html">Video</a></li>
-                                                </ul>-->
-
-					</li>
-
-					<li>
-						<a href="single-blog.html">
-							<span class="count hide-on-mobile"></span>Blog
-						</a>
-						<!--<ul>
-							<li><a href="shop-item.html">Single Item</a></li>
-						</ul>
-					</li>--> 
-					
-				</ul><!-- // #nav -->
-
-			</div><!-- // .container -->
-		</div><!-- // .topbar -->
-
-		<div class="logo-wrap">
-			<div class="container">
-				<div class="mobile-half columns">
-					<h1><a href="index.html" title="Home"><img src="images/logo_text_half.png" alt="" align="right" /></a></h1>
-				<!--</div> // .desktop-6 -->
-
-				<!--<div class="mobile-half columns">
-                                        
-                          	<iframe width="75%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/157362680&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
-                                </div><!-- // .desktop-6 -->
+		</div>
+	</section>
 
 
-				<!--<div class="desktop-6 columns">
-					<p class="site-desc">
-						RGGTRN<br />
-						<span class="font-color-primary">Colectivo itinerante de música algorítmica para bailar</span>
-					</p><!-- // .site-desc
-				</div> --> <!-- // .desktop-6 --> 
+<!-- WORK -->
+<h3>Media</h3>
+<section class="work">
+  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CQH7sxTBvZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="image-area left"><img alt="lima2" src="img/09_platho.jpg"></div>
+      <div class="image-area left"><img alt="man2" src="img/06_london.jpg"></div>
+      <div class="image-area left"><img alt="lima" src="img/algoraveLima.jpg"></div>
+      <div class="image-area left"><img alt="lima2" src="img/iclc.jpg"></div>
+      	
+<iframe width="470" height="300" src="https://www.youtube.com/embed/kcynINPuuGY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-				<div class="clear"></div>
-			</div><!-- // .container -->
-		</div><!-- // .logo-wrap -->
-	</section><!-- // #header -->
-
-
-	<!-- Works
-	================================================== -->
-	<section id="works">
-		<div class="container">
-			<div class="desktop-12 columns"><div class="border-top"></div></div>
-
-			
-				<a href="rodante.html" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>Casa Rodante | Colombia</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/10_casaro.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-				
-				<a href="plato.html" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>Platohedro | Colombia</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/09_platho.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
- 				
-				<a href="platoon.html" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>Platoon  |  México</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/08_platoon.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-
-                                <a href="laberinto.html" class="permalink">
-                                        <div class="desktop-3 mobile-half columns">
-                                                <div class="item first-row">
-                                                        <h3>SantaMA  | México</h3>
-                                                        <span class="category">Presentación</span>
-
-                                                        <img src="images/07_satnama.jpg" alt="" />
-                                                </div><!-- // .item -->
-                                        </div><!-- // .desktop-3 -->
-                                </a>
-
-				<a href="" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>Ravenbourne | Reino Unido</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/06_london.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-				
-				<a href="" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>ODI Leeds | Reino Unido</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/02_leeds.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-
-
-				<a href="" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>Rancho Electrónico | México</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/01_rancho.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-
-				<a href="" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>SAE Institute | México</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/00_sae.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-
-				<!--<a href="" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>Databit | Arles, Francia</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/databit.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-
-				<!--<a href="" class="permalink">
-					<div class="desktop-3 mobile-half columns">
-						<div class="item first-row">
-							<h3>/* vivo */ | Ciudad de México, México</h3>
-							<span class="category">Presentación</span>
-
-							<img src="images/luisemilio.jpg" alt="" />
-						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
-				
-				<!--<div class="clear"></div>
-			
-				
-				
-				<div class="clear"></div>
-			
-		</div><!-- // .container -->
-	</section><!-- // section#works -->
-
-
-
-
-	<!-- Footer
-	================================================== -->
-	<section id="footer">
-		<div class="container">
-			<!--<div class="desktop-3 columns">
-				<p>       <a href="http://www.typebig.com" class="italic">      </a></p>
-			</div><!-- // .desktop-3 -->
-
-			<div class="desktop-9 columns">
-				<ul id="social">
-					<li><a href="http://www.facebook.com/rggtrn" class="hoverMe">Facebook</a></li>
-					<li><a href="http://www.twitter.com/rggtrn" class="hoverMe">Twitter</a></li>
-					<li><a href="https://vimeo.com/rggtrn" class="hoverMe">Vimeo</a></li>
-				</ul><!-- // #social -->
-			</div><!-- // .desktop-9 -->
-
-			<div class="clear"></div>
-		</div><!-- // .container -->
-	</section><!-- // section#footer -->
-
-
-	<!-- JS
-	================================================== -->
-	<!-- 
-		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
-		Use jQuery 1.8 until Flexslider 2.2 stable version is released
-	-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-	<script src="js/jQuery.BlackAndWhite.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/less-1.4.0.min.js"></script>
-	<script src="js/jquery.typeMenu.js"></script>
-	<script src="js/jquery.typeSticky.js"></script>
-
+	<div class="image-area left"><img alt="man2" src="img/10_casaro.jpg"></div>
+ 	<div class="image-area left"><img alt="man2" src="img/medallo.jpg"></div>
+	<div class="image-area left"><img alt="man2" src="img/02_leeds.jpg"></div>
+        <div class="image-area left"><img alt="man2" src="img/algoraveManizales.jpg"></div>
+	<div class="image-area left"><img alt="man2" src="img/volta.jpg"></div>
+	
+<iframe width="470" height="315" src="https://www.youtube.com/embed/cWMWcWtpszg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 
+        <div class="image-area left"><img alt="man2" src="img/bogota.jpg"></div>
+        <div class="image-area left"><img alt="man2" src="img/bakana.jpg"></div>
+        <div class="image-area left"><img alt="man2" src="img/08_platoon.jpg"></div>
 
 	
-
+        <div class="image-area left"><img alt="man2" src="img/medallo3.jpg"></div>
+	<div class="image-area left"><img alt="man2" src="img/ccd.jpg"></div>
+	        <div class="image-area left"><img alt="man2" src="img/plato1.jpg"></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/43rt0KZ2U6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<div class="image-area left"><img alt="man2" src="img/01_rancho.jpg"></div>	
+        <div class="image-area left"><img alt="man2" src="img/algoraveLima3.jpg"></div>
+        <div class="image-area left"><img alt="man2" src="img/07_satnama.jpg"></div>
+        <div class="image-area left"><img alt="man2" src="img/rggtrnBack.jpg"></div>
+        <div class="image-area left"><img alt="man2" src="img/algoraveLima5.jpg"></div>
+	<div class="image-area left"><img alt="man2" src="img/00_sae.jpg"></div>
 	
+      <!--<p >Fotos: Marianne Teixido, Arianne Rodríguez, Luis Navarro, Tatiana Durán, CEPA<br></p>-->
+      
+</section>
 
-
+<footer>
+	<div class="footer-content">
 	
+		<ul class="social">
+			<li>
+				<a href="https://github.com/rggtrn" target="_blank">Github</a>
+			</li>
+			<li>
+                                <a href="https://soundcloud.com/rggtrn" target="_blank">Soundcloud</a>
+                        </li>
+			<li>
+				<a href="https://www.facebook.com/rggtrn" target="_blank">Facebook</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/rggtrn" target="_blank">Instagram</a>
+			</li>
+			<li>
+				<a href="https://vimeo.com/rggtrn" target="_blank">Vimeo</a>
+			</li>
+		</ul>
+	</div>
+</footer>
 
+</div><!--End of "wrapper"-->
 
-	<script src="js/jquery.custom.js"></script>
-
-
-<!-- End Document
-================================================== -->
-</body>
+  </body>
 </html>
