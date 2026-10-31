@@ -124,16 +124,18 @@ img { display: block; max-width: 100%; height: auto; }
 
 .portada .texto { position: relative; padding: var(--space-8) 5%; }
 
-/* Título: casi todo el ancho, sin espacio extra entre letras */
-.portada h1 {
-  font-family: var(--font-display);
-  font-size: clamp(76px, 17vw, 240px);
-  font-weight: 900;
-  line-height: 0.9;
-  letter-spacing: -0.01em;
+/* Título: el wordmark dibujado a mano, vectorizado; casi todo el ancho */
+.portada h1 { line-height: 0; }
+
+.portada .wm {
+  display: block;
+  width: min(78vw, 1000px);
+  height: auto;
+  margin: 0 auto;
+  fill: currentColor;
 }
 
-.portada .lema { font-size: var(--text-lg); margin-top: var(--space-6); }
+.portada .lema { font-size: var(--text-lg); margin-top: var(--space-8); }
 
 .portada .accesos {
   display: flex;
