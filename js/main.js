@@ -20,6 +20,7 @@ const archivo = [
   { cuando: '2019', que: { es: 'AVLab ICLC 2019, presentado por In-Sonora. Medialab Prado, Madrid', en: 'AVLab ICLC 2019, presented by In-Sonora. Medialab Prado, Madrid' } },
   { cuando: '2019', que: { es: 'ICLC 2019, Medialab Prado, Madrid', en: 'ICLC 2019, Medialab Prado, Madrid' } },
   { cuando: '2018', que: { es: '404 Art Not Found, 316 Centro, Ciudad de México', en: '404 Art Not Found, 316 Centro, Mexico City' } },
+  { cuando: '2018', que: { es: '2.º Encuentro de las Humanidades, Ágora de la UAM Cuajimalpa, Ciudad de México', en: '2nd Encuentro de las Humanidades, Ágora, UAM Cuajimalpa, Mexico City' } },
   { cuando: '2018', que: { es: 'Algorave Terminal, Ciudad de México', en: 'Algorave Terminal, Mexico City' } },
   { cuando: '2018', que: { es: 'Algorave Transpiksel, CCEMx, Ciudad de México', en: 'Algorave Transpiksel, CCEMx, Mexico City' } },
   { cuando: '2018', que: { es: 'Bellacode Tour: Bogotá, Manizales, Medellín, Lima, Quito', en: 'Bellacode Tour: Bogotá, Manizales, Medellín, Lima, Quito' } },
