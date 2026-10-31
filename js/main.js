@@ -31,12 +31,13 @@ const archivo = [
   { cuando: '2016', que: { es: 'Algorave UK Tour: Leeds (ODI, 29 abr), Newcastle (30 abr), Hull, Londres (Ravensbourne, 6 may)', en: 'Algorave UK Tour: Leeds (ODI, 29 Apr), Newcastle (30 Apr), Hull, London (Ravensbourne, 6 May)' } },
   { cuando: '2015', que: { es: 'Algorave «Fiesta algorítmica», Rancho Electrónico, Ciudad de México (como ~ON)', en: 'Algorave “Fiesta algorítmica”, Rancho Electrónico, Mexico City (as ~ON)' } },
   { cuando: '2014', que: { es: 'Festival Databit.me, Arles (como ~ON)', en: 'Festival Databit.me, Arles (as ~ON)' } },
+  { cuando: '2012', que: { es: '/*vivo*/ Simposio Internacional de Música y Código, MUAC, Ciudad de México (como ~ON)', en: '/*vivo*/ International Symposium on Music and Code, MUAC, Mexico City (as ~ON)' } },
 ];
 
 // Fotos: img/fotos/NN-nombre.jpg (hasta 1600 px) y NN-nombre-r.jpg (600 px).
 // Pie: lugar y año.
 const fotos = [
-  ['01-on-muac', { es: '~ON, MUAC, Ciudad de México', en: '~ON, MUAC, Mexico City' }],
+  ['01-on-muac', { es: '~ON, /*vivo*/, MUAC, Ciudad de México, 2012', en: '~ON, /*vivo*/, MUAC, Mexico City, 2012' }],
   ['01b-rancho', { es: '~ON, Algorave «Fiesta algorítmica», Rancho Electrónico, Ciudad de México, 2015', en: '~ON, Algorave “Fiesta algorítmica”, Rancho Electrónico, Mexico City, 2015' }],
   ['02-leeds', { es: 'Algorave UK Tour, Leeds, 2016', en: 'Algorave UK Tour, Leeds, 2016' }],
   ['03-londres', { es: 'Algorave UK Tour, Londres, 2016', en: 'Algorave UK Tour, London, 2016' }],
