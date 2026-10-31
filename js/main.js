@@ -37,6 +37,7 @@ const archivo = [
 // Pie: lugar y año.
 const fotos = [
   ['01-on-muac', { es: '~ON, MUAC, Ciudad de México', en: '~ON, MUAC, Mexico City' }],
+  ['01b-rancho', { es: '~ON, Algorave «Fiesta algorítmica», Rancho Electrónico, Ciudad de México, 2015', en: '~ON, Algorave “Fiesta algorítmica”, Rancho Electrónico, Mexico City, 2015' }],
   ['02-leeds', { es: 'Algorave UK Tour, Leeds, 2016', en: 'Algorave UK Tour, Leeds, 2016' }],
   ['03-londres', { es: 'Algorave UK Tour, Londres, 2016', en: 'Algorave UK Tour, London, 2016' }],
   ['04-manizales-2017', { es: 'Algorave-Algorumba, Manizales, 2017', en: 'Algorave-Algorumba, Manizales, 2017' }],
@@ -47,7 +48,6 @@ const fotos = [
   ['08-bakana', { es: 'Bellacode Tour, 2018', en: 'Bellacode Tour, 2018' }],
   ['09-bogota', { es: 'Bellacode Tour, Bogotá, 2018', en: 'Bellacode Tour, Bogotá, 2018' }],
   ['10-medellin', { es: 'Bellacode Tour, Medellín, 2018', en: 'Bellacode Tour, Medellín, 2018' }],
-  ['11-peru', { es: 'Bellacode Tour, Perú, 2018', en: 'Bellacode Tour, Peru, 2018' }],
   ['12-taller-lima', { es: 'Taller, Lima, 2018', en: 'Workshop, Lima, 2018' }],
   ['13-taller-lima', { es: 'Taller, Lima, 2018', en: 'Workshop, Lima, 2018' }],
   ['15-ccd', { es: 'Algorave, Centro de Cultura Digital, Ciudad de México, 2018', en: 'Algorave, Centro de Cultura Digital, Mexico City, 2018' }],
