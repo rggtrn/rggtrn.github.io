@@ -141,5 +141,12 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') mostrarFoto(actual + 1);
 });
 
+// Wordmark de la barra: visible sólo cuando el de la portada queda detrás de la barra
+
+const barra = document.querySelector('.top-bar');
+new IntersectionObserver(([e]) => {
+  barra.classList.toggle('con-marca', !e.isIntersecting);
+}, { rootMargin: `-${barra.offsetHeight}px 0px 0px 0px` }).observe(document.querySelector('.portada .wm'));
+
 pintarFechas();
 pintarFotos();
