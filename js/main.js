@@ -8,6 +8,7 @@ const proximas = [];
 const archivo = [
   { cuando: '2024', que: { es: 'Audio-Visual Sessions, CCRMA, Stanford', en: 'Audio-Visual Sessions, CCRMA, Stanford' }, enlace: 'https://ccrma.stanford.edu/events/audio-visual-sessions-stanford-graduate-composers-with-rggtrn' },
   { cuando: '2022', que: { es: 'Xicalcoliuhqui, con Gabriel de Dios. CCEMx, Ciudad de México', en: 'Xicalcoliuhqui, with Gabriel de Dios. CCEMx, Mexico City' } },
+  { cuando: '2019', que: { es: 'Algorave, Terminal Club-Antisocial, Ciudad de México', en: 'Algorave, Terminal Club-Antisocial, Mexico City' } },
   { cuando: '2019', que: { es: 'Linux Audio Conference, con fiestapirata.com. CCRMA, Stanford', en: 'Linux Audio Conference, with fiestapirata.com. CCRMA, Stanford' }, enlace: 'https://lac.linuxaudio.org/2019/' },
   { cuando: '2019', que: { es: 'Ex Teresa Arte Actual, Ciudad de México', en: 'Ex Teresa Arte Actual, Mexico City' } },
   { cuando: '2019', que: { es: 'VIU, Hangar, Barcelona', en: 'VIU, Hangar, Barcelona' } },
