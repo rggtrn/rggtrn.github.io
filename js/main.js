@@ -16,6 +16,7 @@ const archivo = [
   { cuando: '2019', que: { es: 'Ex Teresa Arte Actual, Ciudad de México', en: 'Ex Teresa Arte Actual, Mexico City' } },
   { cuando: '2019', que: { es: 'Panke Gallery, Berlín', en: 'Panke Gallery, Berlin' } },
   { cuando: '2019', que: { es: 'VIU, Hangar, Barcelona', en: 'VIU, Hangar, Barcelona' } },
+  { cuando: '2019', que: { es: 'AVLab ICLC 2019, presentado por In-Sonora. Medialab Prado, Madrid', en: 'AVLab ICLC 2019, presented by In-Sonora. Medialab Prado, Madrid' } },
   { cuando: '2019', que: { es: 'ICLC 2019, Medialab Prado, Madrid', en: 'ICLC 2019, Medialab Prado, Madrid' } },
   { cuando: '2018', que: { es: '404 Art Not Found, 316 Centro, Ciudad de México', en: '404 Art Not Found, 316 Centro, Mexico City' } },
   { cuando: '2018', que: { es: 'Algorave Terminal, Ciudad de México', en: 'Algorave Terminal, Mexico City' } },
