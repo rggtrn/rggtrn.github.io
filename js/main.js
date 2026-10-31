@@ -22,7 +22,7 @@ const archivo = [
 ];
 
 // Fotos: img/fotos/NN-nombre.jpg (hasta 1600 px) y NN-nombre-r.jpg (600 px).
-// Pie: lugar y año. Falta el crédito de cada foto.
+// Pie: lugar y año.
 const fotos = [
   ['01-on-muac', { es: '~ON, MUAC, Ciudad de México', en: '~ON, MUAC, Mexico City' }],
   ['02-leeds', { es: 'Algorave UK Tour, Leeds, 2016', en: 'Algorave UK Tour, Leeds, 2016' }],
