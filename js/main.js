@@ -29,6 +29,7 @@ const archivo = [
   { cuando: '2017', que: { es: 'Subsónica, Biblioteca Vasconcelos, Ciudad de México', en: 'Subsónica, Biblioteca Vasconcelos, Mexico City' } },
   { cuando: '2017', que: { es: 'Algorave-Algorumba, Manizales', en: 'Algorave-Algorumba, Manizales' } },
   { cuando: '2016', que: { es: 'Algorave UK Tour: Leeds (ODI, 29 abr), Newcastle (30 abr), Hull, Londres (Ravensbourne, 6 may)', en: 'Algorave UK Tour: Leeds (ODI, 29 Apr), Newcastle (30 Apr), Hull, London (Ravensbourne, 6 May)' } },
+  { cuando: '2015', que: { es: 'Algorave «Fiesta algorítmica», Rancho Electrónico, Ciudad de México (como ~ON)', en: 'Algorave “Fiesta algorítmica”, Rancho Electrónico, Mexico City (as ~ON)' } },
   { cuando: '2014', que: { es: 'Festival Databit.me, Arles (como ~ON)', en: 'Festival Databit.me, Arles (as ~ON)' } },
 ];
 
