@@ -72,13 +72,9 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: var(--text-base);
 }
 
-.top-bar .marca {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 900;
-  line-height: 1;
-  text-decoration: none;
-}
+/* El wordmark chico reutiliza los trazos de la portada (<use href="#wm-trazos">) */
+.top-bar .marca { display: block; color: var(--color-text); }
+.top-bar .marca svg { display: block; height: 32px; width: auto; fill: currentColor; }
 
 .top-bar nav {
   display: flex;
