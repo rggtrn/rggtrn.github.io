@@ -12,7 +12,7 @@ const archivo = [
   { cuando: '2019', que: { es: 'Algorave, LiveCode.NYC, Wonderville, Brooklyn', en: 'Algorave, LiveCode.NYC, Wonderville, Brooklyn' } },
   { cuando: '2019', que: { es: 'Noche de Museos, con Daniel Suástegui (Bash0). Museo de Arte Moderno, Ciudad de México', en: 'Noche de Museos, with Daniel Suástegui (Bash0). Museo de Arte Moderno, Mexico City' } },
   { cuando: '2019', que: { es: 'Algorave, Noox Lucerna, Ciudad de México', en: 'Algorave, Noox Lucerna, Mexico City' } },
-  { cuando: '2019', que: { es: 'Linux Audio Conference, con fiestapirata.com. CCRMA, Stanford', en: 'Linux Audio Conference, with fiestapirata.com. CCRMA, Stanford' }, enlace: 'https://lac.linuxaudio.org/2019/' },
+  { cuando: '2019', que: { es: 'Linux Audio Conference, con fiestapirata.com. CCRMA, Stanford', en: 'Linux Audio Conference, with fiestapirata.com. CCRMA, Stanford' }, enlace: 'https://lac.linuxaudio.org/2019/#program' },
   { cuando: '2019', que: { es: 'Ex Teresa Arte Actual, Ciudad de México', en: 'Ex Teresa Arte Actual, Mexico City' } },
   { cuando: '2019', que: { es: 'VIU, Hangar, Barcelona', en: 'VIU, Hangar, Barcelona' } },
   { cuando: '2019', que: { es: 'ICLC 2019, Medialab Prado, Madrid', en: 'ICLC 2019, Medialab Prado, Madrid' } },
