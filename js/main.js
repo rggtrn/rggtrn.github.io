@@ -21,6 +21,32 @@ const archivo = [
   { cuando: '2014', que: { es: 'Festival Databit.me, Arles (como ~ON)', en: 'Festival Databit.me, Arles (as ~ON)' } },
 ];
 
+// Fotos: img/fotos/NN-nombre.jpg (hasta 1600 px) y NN-nombre-r.jpg (600 px).
+// Pie: lugar y año. Falta el crédito de cada foto.
+const fotos = [
+  ['01-on-muac', { es: '~ON, MUAC, Ciudad de México', en: '~ON, MUAC, Mexico City' }],
+  ['02-leeds', { es: 'Algorave UK Tour, Leeds, 2016', en: 'Algorave UK Tour, Leeds, 2016' }],
+  ['03-londres', { es: 'Algorave UK Tour, Londres, 2016', en: 'Algorave UK Tour, London, 2016' }],
+  ['04-manizales-2017', { es: 'Algorave-Algorumba, Manizales, 2017', en: 'Algorave-Algorumba, Manizales, 2017' }],
+  ['05-lima', { es: 'Bellacode Tour, Lima, 2018', en: 'Bellacode Tour, Lima, 2018' }],
+  ['06-lima', { es: 'Bellacode Tour, Lima, 2018', en: 'Bellacode Tour, Lima, 2018' }],
+  ['07-manizales', { es: 'Bellacode Tour, Manizales, 2018', en: 'Bellacode Tour, Manizales, 2018' }],
+  ['08-bakana', { es: 'Bellacode Tour, 2018', en: 'Bellacode Tour, 2018' }],
+  ['09-bogota', { es: 'Bellacode Tour, Bogotá, 2018', en: 'Bellacode Tour, Bogotá, 2018' }],
+  ['10-medellin', { es: 'Bellacode Tour, Medellín, 2018', en: 'Bellacode Tour, Medellín, 2018' }],
+  ['11-peru', { es: 'Bellacode Tour, Perú, 2018', en: 'Bellacode Tour, Peru, 2018' }],
+  ['12-taller-lima', { es: 'Taller, Lima, 2018', en: 'Workshop, Lima, 2018' }],
+  ['13-taller-lima', { es: 'Taller, Lima, 2018', en: 'Workshop, Lima, 2018' }],
+  ['15-ccd', { es: 'Algorave, Centro de Cultura Digital, Ciudad de México, 2018', en: 'Algorave, Centro de Cultura Digital, Mexico City, 2018' }],
+  ['16-ccd', { es: 'Algorave, Centro de Cultura Digital, Ciudad de México, 2018', en: 'Algorave, Centro de Cultura Digital, Mexico City, 2018' }],
+  ['17-iclc', { es: 'ICLC, Medialab Prado, Madrid, 2019', en: 'ICLC, Medialab Prado, Madrid, 2019' }],
+  ['18-madrid', { es: 'Algorave, Madrid, 2019', en: 'Algorave, Madrid, 2019' }],
+  ['19-lac', { es: 'Linux Audio Conference, CCRMA, Stanford, 2019', en: 'Linux Audio Conference, CCRMA, Stanford, 2019' }],
+  ['20-grupo', { es: 'RGGTRN', en: 'RGGTRN' }],
+  ['21-xicalco', { es: 'Xicalcoliuhqui, CCEMx, Ciudad de México, 2022', en: 'Xicalcoliuhqui, CCEMx, Mexico City, 2022' }],
+  ['22-xicalco', { es: 'Xicalcoliuhqui, CCEMx, Ciudad de México, 2022', en: 'Xicalcoliuhqui, CCEMx, Mexico City, 2022' }],
+];
+
 // Un nodo por idioma; el CSS esconde el que no toca
 function bilingue(texto) {
   if (typeof texto === 'string') return texto;
@@ -36,16 +62,24 @@ function pintarFechas() {
       <span class="estado">${bilingue(f.estado)}</span>
     </li>`).join('');
 
-  document.getElementById('archivo').innerHTML = archivo.map(f => {
+  // El año va sólo en la primera fila de cada año
+  document.getElementById('archivo').innerHTML = archivo.map((f, i) => {
     const que = f.enlace ? `<a href="${f.enlace}">${bilingue(f.que)}</a>` : bilingue(f.que);
-    return `<li><span class="cuando">${f.cuando}</span><span class="que">${que}</span></li>`;
+    const nuevo = i === 0 || archivo[i - 1].cuando !== f.cuando;
+    return `<li class="${nuevo ? 'nuevo-año' : ''}"><span class="cuando">${nuevo ? f.cuando : ''}</span><span class="que">${que}</span></li>`;
   }).join('');
 }
 
 // Idioma
 
+const titulos = {
+  es: 'RGGTRN: música algorítmica para bailar',
+  en: 'RGGTRN: algorithmic dance music',
+};
+
 function ponerIdioma(lang) {
   document.documentElement.lang = lang;
+  document.title = titulos[lang];
   localStorage.setItem('idioma', lang);
 }
 
@@ -53,21 +87,44 @@ document.querySelector('.language-toggle').addEventListener('click', () => {
   ponerIdioma(document.documentElement.lang === 'es' ? 'en' : 'es');
 });
 
-// ?lang=es|en (indexES.html redirige con ?lang=es), luego lo guardado, luego el navegador
-const pedido = new URLSearchParams(location.search).get('lang');
-const guardado = localStorage.getItem('idioma');
-ponerIdioma(['es', 'en'].includes(pedido) ? pedido
-  : guardado || (navigator.language.startsWith('es') ? 'es' : 'en'));
+// El idioma inicial lo pone el <script> del <head>; aquí se guarda y se aplica al título
+ponerIdioma(document.documentElement.lang);
 
-// Videos: sólo la miniatura hasta que alguien da clic
+// Fotos: cuadrícula con la versión chica; al dar clic, la grande en un <dialog>
 
-document.querySelectorAll('.video').forEach(v => {
-  const id = v.dataset.youtube;
-  const boton = v.querySelector('button');
-  boton.style.backgroundImage = `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`;
-  boton.addEventListener('click', () => {
-    boton.outerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
-  });
+function pintarFotos() {
+  document.getElementById('fotos-grid').innerHTML = fotos.map(([nombre, pie], i) => `
+    <button type="button" data-i="${i}">
+      <img loading="lazy" src="img/fotos/${nombre}-r.jpg" alt="${pie.es}">
+    </button>`).join('');
+}
+
+const visor = document.getElementById('visor');
+let actual = 0;
+
+function mostrarFoto(i) {
+  actual = (i + fotos.length) % fotos.length;
+  const [nombre, pie] = fotos[actual];
+  visor.querySelector('img').src = `img/fotos/${nombre}.jpg`;
+  visor.querySelector('img').alt = pie[document.documentElement.lang];
+  visor.querySelector('figcaption').innerHTML = bilingue(pie);
+  if (!visor.open) visor.showModal();
+}
+
+document.getElementById('fotos-grid').addEventListener('click', e => {
+  const boton = e.target.closest('button');
+  if (boton) mostrarFoto(Number(boton.dataset.i));
+});
+visor.querySelector('.anterior').addEventListener('click', () => mostrarFoto(actual - 1));
+visor.querySelector('.siguiente').addEventListener('click', () => mostrarFoto(actual + 1));
+visor.querySelector('.cerrar').addEventListener('click', () => visor.close());
+// Clic fuera de la foto (en el fondo del dialog) cierra
+visor.addEventListener('click', e => { if (e.target === visor) visor.close(); });
+document.addEventListener('keydown', e => {
+  if (!visor.open) return;
+  if (e.key === 'ArrowLeft') mostrarFoto(actual - 1);
+  if (e.key === 'ArrowRight') mostrarFoto(actual + 1);
 });
 
 pintarFechas();
+pintarFotos();

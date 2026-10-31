@@ -3,15 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RGGTRN</title>
-<meta name="description" content="RGGTRN: música algorítmica para bailar, desde la Ciudad de México.">
+<title>RGGTRN: música algorítmica para bailar</title>
+<script>
+  // Idioma antes de pintar: ?lang=, luego lo guardado, luego el navegador
+  (function () {
+    var pedido = new URLSearchParams(location.search).get('lang');
+    var guardado = localStorage.getItem('idioma');
+    var lang = pedido === 'es' || pedido === 'en' ? pedido
+      : guardado || (navigator.language.indexOf('es') === 0 ? 'es' : 'en');
+    document.documentElement.lang = lang;
+  })();
+</script>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="RGGTRN: música algorítmica para bailar e improvisación audiovisual, desde la Ciudad de México.">
 <meta property="og:title" content="RGGTRN">
-<meta property="og:description" content="Algorithmic dance music from Mexico City.">
-<meta property="og:image" content="https://rggtrn.github.io/img/medallo.jpg">
+<meta property="og:description" content="Algorithmic dance music and audiovisual improvisation, from Mexico City.">
+<meta property="og:image" content="https://rggtrn.github.io/img/portada.jpg">
 <meta property="og:url" content="https://rggtrn.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Tektur:wght@800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Tektur:wght@600;900&display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,6 +32,7 @@
   <a class="marca" href="#inicio">RGGTRN</a>
   <nav>
     <a href="#escuchar"><span lang="es">Escuchar</span><span lang="en">Listen</span></a>
+    <a href="#fotos"><span lang="es">Fotos</span><span lang="en">Photos</span></a>
     <a href="#flyers">Flyers</a>
     <a href="#banda"><span lang="es">Banda</span><span lang="en">Band</span></a>
     <a href="#fechas"><span lang="es">Fechas</span><span lang="en">Shows</span></a>
@@ -32,12 +45,16 @@
 <main>
 
   <div class="portada" id="inicio">
-    <img src="img/medallo.jpg" alt="" width="960" height="540">
+    <img src="img/portada.jpg" alt="" width="2000" height="1333">
     <div class="texto">
       <h1>RGGTRN</h1>
       <p class="lema">
-        <span lang="es">Música algorítmica para bailar, desde la Ciudad de México.</span>
-        <span lang="en">Algorithmic dance music from Mexico City.</span>
+        <span lang="es">Música algorítmica para bailar e improvisación audiovisual, desde la Ciudad de México.</span>
+        <span lang="en">Algorithmic dance music and audiovisual improvisation, from Mexico City.</span>
+      </p>
+      <p class="accesos">
+        <a href="#escuchar"><span lang="es">Escuchar</span><span lang="en">Listen</span></a>
+        <a href="mailto:rggtrn@gmail.com">rggtrn@gmail.com</a>
       </p>
     </div>
   </div>
@@ -50,46 +67,52 @@
 
   <section id="escuchar">
     <h2><span lang="es">Escuchar</span><span lang="en">Listen</span></h2>
-    <p class="nota">
+    <h3>SoundCloud</h3>
+    <iframe class="soundcloud" loading="lazy" title="RGGTRN en SoundCloud" height="450" scrolling="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F157362680&visual=true&show_artwork=true&show_comments=false&show_reposts=false&hide_related=true"></iframe>
+
+    <p class="nota" style="margin-top: 32px">
       <span lang="es">Xicalcoliuhqui, en vivo con Gabriel de Dios «El Hijo de Tere». Centro Cultural de España en México, 2022.</span>
       <span lang="en">Xicalcoliuhqui, live with Gabriel de Dios “El Hijo de Tere”. Centro Cultural de España en México, 2022.</span>
     </p>
     <ul class="pistas">
-      <li><span>Xicalcoliuhqui · 1</span><audio controls preload="none" src="snd/xicalco-1.mp3"></audio></li>
-      <li><span>Xicalcoliuhqui · 2</span><audio controls preload="none" src="snd/xicalco-2.mp3"></audio></li>
-      <li><span>Xicalcoliuhqui · 3</span><audio controls preload="none" src="snd/xicalco-3.mp3"></audio></li>
+      <li><span>Xicalcoliuhqui 1</span><audio aria-label="Xicalcoliuhqui 1" controls preload="none" src="snd/xicalco-1.mp3"></audio></li>
+      <li><span>Xicalcoliuhqui 2</span><audio aria-label="Xicalcoliuhqui 2" controls preload="none" src="snd/xicalco-2.mp3"></audio></li>
+      <li><span>Xicalcoliuhqui 3</span><audio aria-label="Xicalcoliuhqui 3" controls preload="none" src="snd/xicalco-3.mp3"></audio></li>
     </ul>
     <ul class="pistas" style="margin-top: 16px">
-      <li><span>Badbox Vasconcelos</span><audio controls preload="none" src="snd/badbox-vasconcelos.mp3"></audio></li>
+      <li><span>Badbox Vasconcelos</span><audio aria-label="Badbox Vasconcelos" controls preload="none" src="snd/badbox-vasconcelos.mp3"></audio></li>
     </ul>
-    <p class="nota" style="margin-top: 16px">
-      <span lang="es">Más en</span><span lang="en">More on</span> <a href="https://soundcloud.com/rggtrn">SoundCloud</a>.
-    </p>
 
     <h3>Videos</h3>
     <div class="videos">
-      <div class="video" data-youtube="_8BB_VcGPE8">
-        <button type="button" aria-label="RGGTRN ICLC"></button>
+      <div class="video">
+        <iframe loading="lazy" title="RGGTRN ICLC" src="https://www.youtube-nocookie.com/embed/_8BB_VcGPE8" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
         <p>ICLC 2019, Madrid</p>
       </div>
-      <div class="video" data-youtube="tGV8jks-p1U">
-        <button type="button" aria-label="Bellacode Live in Manizales"></button>
+      <div class="video">
+        <iframe loading="lazy" title="Bellacode Live in Manizales" src="https://www.youtube-nocookie.com/embed/tGV8jks-p1U" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
         <p>Bellacode, Manizales</p>
       </div>
-      <div class="video" data-youtube="8_E9zycPqo4">
-        <button type="button" aria-label="RGGTRN - Malandrone"></button>
+      <div class="video">
+        <iframe loading="lazy" title="RGGTRN - Malandrone" src="https://www.youtube-nocookie.com/embed/8_E9zycPqo4" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
         <p>Malandrone</p>
       </div>
-      <div class="video" data-youtube="kcynINPuuGY">
-        <button type="button" aria-label="planCkillall Remix"></button>
+      <div class="video">
+        <iframe loading="lazy" title="planCkillall Remix" src="https://www.youtube-nocookie.com/embed/kcynINPuuGY" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
         <p>planCkillall Remix</p>
       </div>
     </div>
   </section>
 
+  <section id="fotos" class="ancha">
+    <h2><span lang="es">Fotos</span><span lang="en">Photos</span></h2>
+    <div class="fotos" id="fotos-grid"></div>
+  </section>
+
   <section id="flyers" class="ancha">
     <h2>Flyers</h2>
     <div class="flyers">
+      <img loading="lazy" src="img/flyers/ccrma2024.jpg" alt="Audio-Visual Sessions, CCRMA, Stanford, 2024">
       <img loading="lazy" src="img/flyers/bellacode.jpg" alt="Bellacode Tour, 2018">
       <img loading="lazy" src="img/flyers/leeds.jpg" alt="Algorave, Leeds, 2016">
       <img loading="lazy" src="img/flyers/medialabuio.jpg" alt="Medialab UIO, Quito">
@@ -116,11 +139,11 @@
     <h2><span lang="es">Banda</span><span lang="en">Band</span></h2>
     <div lang="es">
       <p>RGGTRN empezó en 2012 en la Ciudad de México como ~ON, un dúo de música electroacústica y mixta con Luis Navarro. En 2014, de gira por Francia y España, tomamos el nombre en Bilbao.</p>
-      <p>Después el trabajo se movió a la música algorítmica para bailar y la improvisación audiovisual: cumbia, salsa y reggaeton cruzados con techno y footwork, programados en vivo con SuperCollider y Hydra. Tocamos en algoraves de México, Colombia, Perú, Ecuador, España y el Reino Unido, en la International Conference on Live Coding y en la Linux Audio Conference.</p>
+      <p>Después el trabajo se movió a la música algorítmica para bailar y la improvisación audiovisual: cumbia, salsa y reggaeton cruzados con techno y footwork, programados en vivo con SuperCollider y Hydra. Tocamos en algoraves de México, Colombia, Perú, Ecuador, España y el Reino Unido, en la International Conference on Live Coding, en Madrid, y en la Linux Audio Conference, en Stanford, Estados Unidos.</p>
     </div>
     <div lang="en">
       <p>RGGTRN started in 2012 in Mexico City as ~ON, an electroacoustic and mixed music duo with Luis Navarro. In 2014, on tour in France and Spain, we took the name in Bilbao.</p>
-      <p>The work then moved to algorithmic dance music and audiovisual improvisation: cumbia, salsa and reggaeton crossed with techno and footwork, live coded in SuperCollider and Hydra. We have played algoraves in Mexico, Colombia, Peru, Ecuador, Spain and the UK, the International Conference on Live Coding and the Linux Audio Conference.</p>
+      <p>The work then moved to algorithmic dance music and audiovisual improvisation: cumbia, salsa and reggaeton crossed with techno and footwork, live coded in SuperCollider and Hydra. We have played algoraves in Mexico, Colombia, Peru, Ecuador, Spain and the UK, the International Conference on Live Coding in Madrid and the Linux Audio Conference at Stanford, in the US.</p>
     </div>
 
   </section>
@@ -150,6 +173,16 @@
   <a href="https://github.com/rggtrn">GitHub</a>
   <a href="mailto:rggtrn@gmail.com">Email</a>
 </footer>
+
+<dialog id="visor">
+  <button type="button" class="cerrar" autofocus aria-label="×">×</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button type="button" class="anterior" aria-label="←">←</button>
+  <button type="button" class="siguiente" aria-label="→">→</button>
+</dialog>
 
 <script src="js/main.js"></script>
 </body>
