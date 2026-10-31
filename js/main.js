@@ -51,6 +51,7 @@ const fotos = [
   ['13-taller-lima', { es: 'Taller, Lima, 2018', en: 'Workshop, Lima, 2018' }],
   ['15-ccd', { es: 'Algorave, Centro de Cultura Digital, Ciudad de México, 2018', en: 'Algorave, Centro de Cultura Digital, Mexico City, 2018' }],
   ['17-iclc', { es: 'ICLC, Medialab Prado, Madrid, 2019', en: 'ICLC, Medialab Prado, Madrid, 2019' }],
+  ['17b-madrid-iclc', { es: 'Algorave de la ICLC, Madrid, 2019', en: 'ICLC Algorave, Madrid, 2019' }],
   ['18-madrid', { es: 'Algorave, Madrid, 2019', en: 'Algorave, Madrid, 2019' }],
   ['18a-viu', { es: 'Algorave, VIU, Hangar, Barcelona, 2019', en: 'Algorave, VIU, Hangar, Barcelona, 2019' }],
   ['18a-viu-taller', { es: 'Taller «Desarrollo de lenguajes computacionales para artistas», VIU, Hangar, Barcelona, 2019', en: 'Workshop “Developing computer languages for artists”, VIU, Hangar, Barcelona, 2019' }],
