@@ -1,218 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>RGGTRN</title>
+<html lang="es">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  
-  body {
-      font-family: "Lato", sans-serif;
-      color: white;
-      background-color: black;
-  }
-  
-.mySlides {display: none}
-</style>
-
+<title>RGGTRN</title>
+<meta name="description" content="RGGTRN: música algorítmica para bailar, desde la Ciudad de México.">
+<meta property="og:title" content="RGGTRN">
+<meta property="og:description" content="Algorithmic dance music from Mexico City.">
+<meta property="og:image" content="https://rggtrn.github.io/img/medallo.jpg">
+<meta property="og:url" content="https://rggtrn.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Tektur:wght@800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
- <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#RGGTRN" class="w3-bar-item w3-button w3-padding-large">RGGTRN</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
-    <a href="#events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EVENTS</a>
-    <a href="#media" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDIA</a>
-    <a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="indexES.html" class="w3-padding-large w3-hover-green w3-hide-small w3-right">ES</a>
+
+<header class="top-bar">
+  <a class="marca" href="#inicio">RGGTRN</a>
+  <nav>
+    <a href="#escuchar"><span lang="es">Escuchar</span><span lang="en">Listen</span></a>
+    <a href="#flyers">Flyers</a>
+    <a href="#banda"><span lang="es">Banda</span><span lang="en">Band</span></a>
+    <a href="#fechas"><span lang="es">Fechas</span><span lang="en">Shows</span></a>
+    <a href="#textos"><span lang="es">Textos</span><span lang="en">Papers</span></a>
+    <a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+  </nav>
+  <button class="language-toggle" type="button"><span lang="es">EN</span><span lang="en">ES</span></button>
+</header>
+
+<main>
+
+  <div class="portada" id="inicio">
+    <img src="img/medallo.jpg" alt="" width="960" height="540">
+    <div class="texto">
+      <h1>RGGTRN</h1>
+      <p class="lema">
+        <span lang="es">Música algorítmica para bailar, desde la Ciudad de México.</span>
+        <span lang="en">Algorithmic dance music from Mexico City.</span>
+      </p>
+    </div>
   </div>
-</div>
 
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#RGGTRN" class="w3-bar-item w3-button w3-padding-large">RGGTRN</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
-    <a href="#events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EVENTS</a>
-    <a href="#media" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDIA</a>
-    <a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="indexES.html" class="w3-padding-large w3-hover-green w3-hide-small w3-right">ES</a>
-</div>
+  <!-- Gira 2026: aparece sola cuando main.js tenga fechas en `proximas` -->
+  <section id="gira" hidden>
+    <h2><span lang="es">Gira 2026</span><span lang="en">Tour 2026</span></h2>
+    <ul class="fechas" id="proximas"></ul>
+  </section>
 
-  <!-- Header -->
-<header class="w3-container w3-center w3-padding-48 w3-black w3-grayscale" id="RGGTRN">
-  <img class="w3-image" src="img/medallo.jpg" alt="Hamburger Catering" width="960" height="540">
-    <div class="w3-display-middle w3-padding-large w3-black w3-opacity">
-      <h1 class="w3-xxxlarge w3-wide"><b> R  G  G  T  R  N </b></h1>
+  <section id="escuchar">
+    <h2><span lang="es">Escuchar</span><span lang="en">Listen</span></h2>
+    <p class="nota">
+      <span lang="es">Xicalcoliuhqui, en vivo con Gabriel de Dios «El Hijo de Tere». Centro Cultural de España en México, 2022.</span>
+      <span lang="en">Xicalcoliuhqui, live with Gabriel de Dios “El Hijo de Tere”. Centro Cultural de España en México, 2022.</span>
+    </p>
+    <ul class="pistas">
+      <li><span>Xicalcoliuhqui · 1</span><audio controls preload="none" src="snd/xicalco-1.mp3"></audio></li>
+      <li><span>Xicalcoliuhqui · 2</span><audio controls preload="none" src="snd/xicalco-2.mp3"></audio></li>
+      <li><span>Xicalcoliuhqui · 3</span><audio controls preload="none" src="snd/xicalco-3.mp3"></audio></li>
+    </ul>
+    <ul class="pistas" style="margin-top: 16px">
+      <li><span>Badbox Vasconcelos</span><audio controls preload="none" src="snd/badbox-vasconcelos.mp3"></audio></li>
+    </ul>
+    <p class="nota" style="margin-top: 16px">
+      <span lang="es">Más en</span><span lang="en">More on</span> <a href="https://soundcloud.com/rggtrn">SoundCloud</a>.
+    </p>
+
+    <h3>Videos</h3>
+    <div class="videos">
+      <div class="video" data-youtube="_8BB_VcGPE8">
+        <button type="button" aria-label="RGGTRN ICLC"></button>
+        <p>ICLC 2019, Madrid</p>
+      </div>
+      <div class="video" data-youtube="tGV8jks-p1U">
+        <button type="button" aria-label="Bellacode Live in Manizales"></button>
+        <p>Bellacode, Manizales</p>
+      </div>
+      <div class="video" data-youtube="8_E9zycPqo4">
+        <button type="button" aria-label="RGGTRN - Malandrone"></button>
+        <p>Malandrone</p>
+      </div>
+      <div class="video" data-youtube="kcynINPuuGY">
+        <button type="button" aria-label="planCkillall Remix"></button>
+        <p>planCkillall Remix</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <section id="flyers" class="ancha">
+    <h2>Flyers</h2>
+    <div class="flyers">
+      <img loading="lazy" src="img/flyers/bellacode.jpg" alt="Bellacode Tour, 2018">
+      <img loading="lazy" src="img/flyers/leeds.jpg" alt="Algorave, Leeds, 2016">
+      <img loading="lazy" src="img/flyers/medialabuio.jpg" alt="Medialab UIO, Quito">
+      <img loading="lazy" src="img/flyers/tren.jpg" alt="El Tren Eléctrico, Lima">
+      <img loading="lazy" src="img/flyers/newcastle.jpg" alt="Algorave, Newcastle, 2016">
+      <img loading="lazy" src="img/flyers/terminal.jpg" alt="Algorave Terminal">
+      <img loading="lazy" src="img/flyers/volta.jpg" alt="Volta">
+      <img loading="lazy" src="img/flyers/algosix.jpg" alt="Algosix">
+      <img loading="lazy" src="img/flyers/sorry.jpg" alt="Sorry I'm Late">
+      <img loading="lazy" src="img/flyers/javeriana.jpg" alt="Javeriana, Bogotá">
+      <img loading="lazy" src="img/flyers/medellin1.jpg" alt="Medellín">
+      <img loading="lazy" src="img/flyers/lesk.jpg" alt="Lesk">
+      <img loading="lazy" src="img/flyers/nancarrow.jpg" alt="Nancarrow">
+      <img loading="lazy" src="img/flyers/subsonica.jpg" alt="Subsónica">
+      <img loading="lazy" src="img/flyers/fabricaterminal.jpg" alt="Fábrica Digital, Terminal">
+      <img loading="lazy" src="img/flyers/plataforma.jpg" alt="Plataforma">
+      <img loading="lazy" src="img/flyers/plataformacharla.jpg" alt="Plataforma, charla">
+      <img loading="lazy" src="img/flyers/motolinia.jpg" alt="Motolinía">
+      <img loading="lazy" src="img/flyers/platoon.jpg" alt="Platoon">
+    </div>
+  </section>
 
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-      <h2 class="w3-wide">ABOUT</h2>
-    <p>RGGTRN (pronounced reɣɣaeˈtɾon), originally an electroacoustic and mixed music duo founded in 2012 in Mexico City, has evolved into a collective that engages in algorithmic dance music and audiovisual improvisation informed by the Latinx context that revolves around its members.</p>
+  <section id="banda">
+    <h2><span lang="es">Banda</span><span lang="en">Band</span></h2>
+    <div lang="es">
+      <p>RGGTRN empezó en 2012 en la Ciudad de México como ~ON, un dúo de música electroacústica y mixta con Luis Navarro. En 2014, de gira por Francia y España, tomamos el nombre en Bilbao.</p>
+      <p>Después el trabajo se movió a la música algorítmica para bailar y la improvisación audiovisual: cumbia, salsa y reggaeton cruzados con techno y footwork, programados en vivo con SuperCollider y Hydra. Tocamos en algoraves de México, Colombia, Perú, Ecuador, España y el Reino Unido, en la International Conference on Live Coding y en la Linux Audio Conference.</p>
+    </div>
+    <div lang="en">
+      <p>RGGTRN started in 2012 in Mexico City as ~ON, an electroacoustic and mixed music duo with Luis Navarro. In 2014, on tour in France and Spain, we took the name in Bilbao.</p>
+      <p>The work then moved to algorithmic dance music and audiovisual improvisation: cumbia, salsa and reggaeton crossed with techno and footwork, live coded in SuperCollider and Hydra. We have played algoraves in Mexico, Colombia, Peru, Ecuador, Spain and the UK, the International Conference on Live Coding and the Linux Audio Conference.</p>
     </div>
 
-    
-    
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="music">
-      <h2 class="w3-wide">MUSIC</h2>
-      <br>
-      <iframe width="50%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/157362680&color=%230c0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/536003550&color=%230c1011&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </div>
+  </section>
 
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#RGGTRN" class="w3-bar-item w3-button w3-padding-large">RGGTRN</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
-    <a href="#events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EVENTS</a>
-    <a href="#media" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDIA</a>
-    <a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="indexES.html" class="w3-padding-large w3-hover-green w3-hide-small w3-right">ES</a>
-</div>
+  <section id="fechas">
+    <h2><span lang="es">Fechas anteriores</span><span lang="en">Past shows</span></h2>
+    <ul class="fechas archivo" id="archivo"></ul>
+  </section>
 
-         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="events">
-       <h2 class="w3-wide">EVENTS</h2>
-       <!--<p>03/05/2018 <a></a></p>-->
-       <p>21/01/2019 <a href="https://toplapbarcelona.hangar.org/index.php/en/viu-3/">VIU Hangar </a> Barcelona ES</p>
-       <p>16/01/2019 - 18/01/2019 <a href="http://iclc.livecodenetwork.org/2019/"> ICLC 2019 Medialab Prado </a>Madrid ES</p>
-       <strike><p>08/12/2018 <a href="https://boletopolis.com/es/evento/6838"> 404 Art Not Found 316centro</a> Ciudad de México MX</p></strike>
-       <strike><p>04/08/2018 <a href="https://algorave-terminal.boletia.com/"> Algorave Terminal </a>Ciudad de México MX</p></strike>
-       <strike><p>13/07/2018 <a href="http://ccemx.org/formacion/festival-transpiksel-mx-antimateria"> Algorave Transpiksel CCE</a> Ciudad de México MX</p></strike>
-       <strike><p>03/05/2018 - 02/06/2018 <a href="http://www.ibermusicas.org/es/noticias/596">Bellacode Tour </a>Bogotá, Manizales, Medellín CO; Lima PE & Quito EC </p></strike>
-       <strike><p>26/04/2018 <a href="https://centroculturadigital.mx/actividad/Bellacode-H1Wz9yPqG">Mensajes Sonoros #1: RGGTRN CCD</a> Ciudad de México MX</p></strike>
-     </div>
+  <section id="textos">
+    <h2><span lang="es">Textos</span><span lang="en">Papers</span></h2>
+    <p><a href="https://dj.dancecult.net/index.php/dancecult/article/view/1066/962">Saborítmico: A Report from the Dance Floor in Mexico</a>. <span class="nota">Dancecult, 2018.</span></p>
+    <p>Bellacode: localized textual interfaces for live coding music. <span class="nota">ICLC, Madrid, 2019.</span></p>
+  </section>
 
-    
-     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:500px" id="media">
-       <h2 class="w3-wide">MEDIA</h2>
+  <section id="contacto">
+    <h2><span lang="es">Contacto</span><span lang="en">Contact</span></h2>
+    <a class="correo" href="mailto:rggtrn@gmail.com">rggtrn@gmail.com</a>
+  </section>
 
-       <!--photos-->
-       
-       <div class="w3-content w3-display-container">
+</main>
 
-	 <img class="mySlides2" src="img/photos/volta.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/tallerLima3.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/tallerLima2.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/tallerLima.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/rggtrnBack.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/rggtrn.png" style="width:100%">
-	 <img class="mySlides2" src="img/photos/plato1.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/medallo3.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/medallo2.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/medallo.jpg" style="width:100%">
-	 
-	 <img class="mySlides2" src="img/photos/manizales2017.png" style="width:100%">
-	 <img class="mySlides2" src="img/photos/iclc.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/ccd.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/bogota.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/algoraveManizales3.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/algoraveManizales4.jpg" style="width:100%">
-	 <img class="mySlides2" src="img/photos/bakana.jpg" style="width:100%">
-
-	 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
-	 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
-       </div>
-
-       <!--posters-->
-       <iframe src="https://player.vimeo.com/video/289901460" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-     
-       <iframe width="100%" height="315" src="https://www.youtube.com/embed/_8BB_VcGPE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
-       <iframe width="100%" height="315" src="https://www.youtube.com/embed/kcynINPuuGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
-       <div class="w3-content w3-display-container">
-	 <img class="mySlides1" src="img/flyers/algosix.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/leeds.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/nancarrow.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/newcastle.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/plataforma.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/sorry.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/terminal.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/tren.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/volta.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/motolinia.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/platoon.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/bellacode.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/subsonica.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/javeriana.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/fabricaterminal.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/plataformacharla.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/medialabuio.jpg" style="width:100%">
-	 <img class="mySlides1" src="img/flyers/lesk.jpg" style="width:100%">
-
-	 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
-	 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
-       </div>
-
-	<script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showDivs(1, 0);
-showDivs(1, 1);
-
-function plusDivs(n, no) {
-  showDivs(slideIndex[no] += n, no);
-}
-
-function showDivs(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-	</script>
-
-	<iframe width="100%" height="315" src="https://www.youtube.com/embed/tGV8jks-p1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-	<h3>Radio & Podcast</h3>
-       <p><a href="https://rest.rock101online.mx/ondemand101/#!/pages/archivo-sorry-i-039-m-late-rggtrn-miau-11-de-septiembre-del-2018-2553">Rock 101 - Sorry I'm Late</a></p>
-       <h4>Radio Nopal - Efecto Larsen</h4>
-       <iframe src="https://archive.org/embed/EfectoLarsen2" width="500" height="140" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-
-       <iframe width="100%" height="315" src="https://www.youtube.com/embed/8_E9zycPqo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
-     </div>
-
-     
-     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="publications">
-       <h2 class="w3-wide">PUBLICATIONS</h2>
-
-      <h3><a href="https://dj.dancecult.net/index.php/dancecult/article/view/1066/962">Saborítmico: A Report From the Dance Floor in Mexico</a>
-     </div></h3>
-
-     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contact">
-       <h2 class="w3-wide">CONTACT</h2>
-    <p>                                                                                                                                             
-      Email:                                                                                                                           
-      <a href="mailto:rggtrn@gmail.com">rggtrn@gmail.com</a>                                                              
-    </p>   
-     </div>
-    
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xxlarge">
-  <a href="https://github.com/rggtrn"><i class="fa fa-github"></i></a>
-  <a href="https://www.facebook.com/rggtrn/"><i class="fa fa-facebook-official"></i></a>
-  <a href="https://www.instagram.com/rggtrn/"><i class="fa fa-instagram"></i></a>
-  <a href="https://twitter.com/rggtrn"><i class="fa fa-twitter"></i></a>
-  <a href="https://vimeo.com/rggtrn"><i class="fa fa-vimeo"></i></a>
+<footer>
+  <a href="https://www.instagram.com/rggtrn/">Instagram</a>
+  <a href="https://soundcloud.com/rggtrn">SoundCloud</a>
+  <a href="https://vimeo.com/rggtrn">Vimeo</a>
+  <a href="https://github.com/rggtrn">GitHub</a>
+  <a href="mailto:rggtrn@gmail.com">Email</a>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
-
 </html>
-
