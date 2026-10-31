@@ -141,14 +141,6 @@ img { display: block; max-width: 100%; height: auto; }
 
 .portada .lema { font-size: var(--text-lg); margin-top: var(--space-8); }
 
-.portada .accesos {
-  display: flex;
-  gap: var(--space-6);
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: var(--space-4);
-  color: var(--color-text-mid);
-}
 
 /* Secciones */
 
