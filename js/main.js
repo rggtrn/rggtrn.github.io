@@ -6,9 +6,10 @@
 const proximas = [];
 
 const archivo = [
-  { cuando: '2024', que: { es: 'Audio-Visual Sessions, CCRMA, Stanford', en: 'Audio-Visual Sessions, CCRMA, Stanford' } },
+  { cuando: '2024', que: { es: 'Audio-Visual Sessions, CCRMA, Stanford', en: 'Audio-Visual Sessions, CCRMA, Stanford' }, enlace: 'https://ccrma.stanford.edu/events/audio-visual-sessions-stanford-graduate-composers-with-rggtrn' },
   { cuando: '2022', que: { es: 'Xicalcoliuhqui, con Gabriel de Dios. CCEMx, Ciudad de México', en: 'Xicalcoliuhqui, with Gabriel de Dios. CCEMx, Mexico City' } },
-  { cuando: '2019', que: { es: 'Linux Audio Conference, CCRMA, Stanford', en: 'Linux Audio Conference, CCRMA, Stanford' } },
+  { cuando: '2019', que: { es: 'Linux Audio Conference, con fiestapirata.com. CCRMA, Stanford', en: 'Linux Audio Conference, with fiestapirata.com. CCRMA, Stanford' }, enlace: 'https://lac.linuxaudio.org/2019/' },
+  { cuando: '2019', que: { es: 'Ex Teresa Arte Actual, Ciudad de México', en: 'Ex Teresa Arte Actual, Mexico City' } },
   { cuando: '2019', que: { es: 'VIU, Hangar, Barcelona', en: 'VIU, Hangar, Barcelona' } },
   { cuando: '2019', que: { es: 'ICLC 2019, Medialab Prado, Madrid', en: 'ICLC 2019, Medialab Prado, Madrid' } },
   { cuando: '2018', que: { es: '404 Art Not Found, 316 Centro, Ciudad de México', en: '404 Art Not Found, 316 Centro, Mexico City' } },
@@ -16,8 +17,9 @@ const archivo = [
   { cuando: '2018', que: { es: 'Algorave Transpiksel, CCEMx, Ciudad de México', en: 'Algorave Transpiksel, CCEMx, Mexico City' } },
   { cuando: '2018', que: { es: 'Bellacode Tour: Bogotá, Manizales, Medellín, Lima, Quito', en: 'Bellacode Tour: Bogotá, Manizales, Medellín, Lima, Quito' } },
   { cuando: '2018', que: { es: 'Mensajes Sonoros #1, Centro de Cultura Digital, Ciudad de México', en: 'Mensajes Sonoros #1, Centro de Cultura Digital, Mexico City' }, enlace: 'https://centroculturadigital.mx/actividad/Bellacode-H1Wz9yPqG' },
+  { cuando: '2017', que: { es: 'ICLC 2017, Morelia', en: 'ICLC 2017, Morelia' } },
   { cuando: '2017', que: { es: 'Algorave-Algorumba, Manizales', en: 'Algorave-Algorumba, Manizales' } },
-  { cuando: '2016', que: { es: 'Algorave UK Tour: Leeds, Newcastle, Hull, Londres', en: 'Algorave UK Tour: Leeds, Newcastle, Hull, London' } },
+  { cuando: '2016', que: { es: 'Algorave UK Tour: Leeds (ODI, 29 abr), Newcastle (30 abr), Hull, Londres (Ravensbourne, 6 may)', en: 'Algorave UK Tour: Leeds (ODI, 29 Apr), Newcastle (30 Apr), Hull, London (Ravensbourne, 6 May)' } },
   { cuando: '2014', que: { es: 'Festival Databit.me, Arles (como ~ON)', en: 'Festival Databit.me, Arles (as ~ON)' } },
 ];
 
