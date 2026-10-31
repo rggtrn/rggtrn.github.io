@@ -49,6 +49,7 @@ const fotos = [
   ['15-ccd', { es: 'Algorave, Centro de Cultura Digital, Ciudad de México, 2018', en: 'Algorave, Centro de Cultura Digital, Mexico City, 2018' }],
   ['17-iclc', { es: 'ICLC, Medialab Prado, Madrid, 2019', en: 'ICLC, Medialab Prado, Madrid, 2019' }],
   ['18-madrid', { es: 'Algorave, Madrid, 2019', en: 'Algorave, Madrid, 2019' }],
+  ['18a-viu', { es: 'Algorave, VIU, Hangar, Barcelona, 2019', en: 'Algorave, VIU, Hangar, Barcelona, 2019' }],
   ['18b-panke', { es: 'Panke Gallery, Berlín, 2019', en: 'Panke Gallery, Berlin, 2019' }],
   ['19-lac', { es: 'Linux Audio Conference, CCRMA, Stanford, 2019', en: 'Linux Audio Conference, CCRMA, Stanford, 2019' }],
   ['20-grupo', { es: 'RGGTRN', en: 'RGGTRN' }],
