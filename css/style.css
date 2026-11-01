@@ -168,6 +168,12 @@ h3 {
 p + p { margin-top: var(--space-4); }
 .nota { color: var(--color-text-mid); font-size: var(--text-base); }
 
+/* Banda: los nombres como arreglo de SuperCollider; la sintaxis atenuada, los nombres en claro */
+.integrantes { margin-bottom: var(--space-6); font-size: var(--text-md); color: var(--color-text-mid); }
+.integrantes code { font-family: inherit; }
+.integrantes .nombres { color: var(--color-text); }
+.integrantes .nombres span { white-space: nowrap; }
+
 /* Fechas */
 
 .fechas { list-style: none; }

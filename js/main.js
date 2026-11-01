@@ -151,3 +151,20 @@ new IntersectionObserver(([e]) => {
 
 pintarFechas();
 pintarFotos();
+
+// Banda: los nombres en otro orden cada vez que se carga la página (Fisher–Yates)
+
+const integrantes = ['Emilio Ocelotl', 'Marianne Teixido', 'Luis N. Del Angel', 'Jessica Rodríguez'];
+
+function scramble(lista) {
+  const a = [...lista];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Cada nombre en su <span> para que no se parta entre renglones
+document.querySelector('#banda .nombres').innerHTML =
+  scramble(integrantes).map(n => `<span>"${n}"</span>`).join(', ');
