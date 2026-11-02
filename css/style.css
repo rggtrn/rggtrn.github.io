@@ -350,8 +350,8 @@ footer a:hover { color: var(--color-text); }
     overflow: visible;
     white-space: normal;
   }
-  .fechas li { grid-template-columns: 1fr auto; }
-  .fechas .cuando { grid-column: 1 / -1; }
+  .fechas:not(.archivo) li { grid-template-columns: 1fr auto; }
+  .fechas:not(.archivo) .cuando { grid-column: 1 / -1; }
   .pistas li { grid-template-columns: 1fr; gap: var(--space-2); }
 }
 
